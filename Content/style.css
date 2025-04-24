@@ -1,0 +1,37 @@
+ * {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+#box1 {
+    background-color: crimson;
+    height: 200px;
+    width: 200px;
+}
+#box2 {
+    background-color: rgb(9, 248, 136);
+    height: 200px;
+    width: 200px;
+}
+#box3 {
+    background-color: rgb(140, 20, 220);
+    height: 200px;
+    width: 200px;
+} 
+ #nav{
+    height: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+
+}
+#part2{
+    display: flex;
+    gap: 50px;
+} 
+
