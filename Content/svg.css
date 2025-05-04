@@ -1,0 +1,33 @@
+/* Svg- Scalable vector graphics basically ek tarah ka text hota hai jiski help se animation
+ bana sakte hai bcoz text ko kitna bhi zoom karo uska pixel nhi fat ta hai */
+
+ /* SVG animation banata jo mouse ke movement pe react karta hai. Jab user #string element ke upar mouse move karta hai, toh ek Bezier curve (Q) mouse ki position ke according bend hota hai — aisa lagta hai jaise ek rubber string hil rahi ho.
+
+GSAP library ka use karke path smoothly animate hota hai.
+
+Jab mouse bahar nikalta hai (mouseleave), toh curve apni original shape me elastic effect ke sath wapas aa jata hai.
+
+mouseenter aur mouseleave events console me logs show karte hain.
+
+Ye animation visually engaging aur interactive UI ke liye kaafi useful hai. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    color: #fff;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+
+  }
+#string{
+height: 200px;
+width: 100%;
+/* background-color: red; */
+  }
