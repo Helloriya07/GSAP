@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Custom_cursor.css">
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <div id="main">
+        <div id="image">
+            <div id="overlay"></div>
+            <img src="https://images.unsplash.com/photo-1745597797513-1ed1bbde4060?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+    integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Custom_cursor.js"></script>
+
+</html>
+<!-- Element Select karna (querySelector):
+main: Page ka main container (ID main se select kiya gaya).
+cursor: Custom cursor element (ID cursor).
+img: Image ya koi visual element (ID image).
+
+Click Event on main:
+Jab main element par click hota hai, console mein "event performed" print hota hai.
+Ye mainly debugging ya interaction check karne ke liye useful hai.
+Mousemove Event on main (GSAP Animation):
+Jab mouse main ke andar move karta hai, tab:
+GSAP ke through cursor ko mouse ke position (x aur y) par smoothly move kiya jata hai.
+Animation time: 0.6 seconds.
+Easing: "back.out" (ye thoda bounce/elastic effect deta hai jab cursor move hota hai).
+
+✅ GSAP Animation ka fayda:
+JavaScript ke default animation ke comparison mein GSAP zyada smooth aur customizable hota hai.
+gsap.to() function use karke kisi bhi element ke properties (x, y, scale, color, etc.) ko animate kiya ja sakta hai.
+
+Mouseenter Event on img:
+Jab mouse image par aata hai:
+Cursor ke andar text "View More" dikhaya jata hai.
+GSAP se cursor ko enlarge (scale: 4) kiya jata hai.
+Cursor ka background color light grey ban jata hai (rgba(224, 221, 221, 0.863)).
+
+Mouseleave Event on img:
+Jab mouse image se nikalta hai:
+Cursor ka text hata diya jata hai.
+Cursor apne original size (scale: 1) par wapas aa jata hai.
+Background color white ho jata hai.
+
+🎯 GSAP ka Use - Thoda Detail mein:
+gsap.to(targetElement, { properties }):
+Is function se aap kisi bhi element ko animate kar sakte ho.
+Target: Kaunsa element animate hoga (yahan cursor).
+
+Properties:
+x, y: Position change karne ke liye.
+scale: Size increase/decrease.
+backgroundColor: Background color change.
+duration: Animation ka duration (in seconds).
+ease: Easing effect (e.g., back.out for a bouncy feel).
+
+🛠️ GSAP ka use karke interaction zyada dynamic, smooth aur visually attractive lagta hai. -->

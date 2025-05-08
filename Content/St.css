@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "arial";
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+#page1,
+#page2,
+#page3 {
+    height: 100vh;
+    width: 100%;
+    padding: 5vw 0;
+}
+
+#move {
+    background-color: #D8FF04;
+    display: flex;
+    padding: 1vw 0;
+    overflow-x: hidden;
+    width: max-content;
+}
+
+.marque {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding: 0 1.5vw;
+    transform: translateX(-100%);
+    white-space: nowrap;
+}
+
+.marque h1 {
+    font-size: 2vw;
+    color: rgb(17, 3, 70);
+}
